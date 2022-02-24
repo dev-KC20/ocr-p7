@@ -1,3 +1,17 @@
+# local data
+*.csv
+*.xls
+*.xlsx
+*.log
+*.cfg
+*.data
+data_back-up/
+flake8_dashboard/
+
+# local settings
+.vscode/
+.idea/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
