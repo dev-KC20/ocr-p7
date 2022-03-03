@@ -53,8 +53,18 @@ il est conseillé sous le prompt bash python (ici cmd Anaconda3 sous Windows 10)
        ` mkdir data   `
 
 7. d'executer le script  
-      ` python glouton.py  `
-      ` python bruteforce.py  `
-      ` python optimized.py  `
+      ` python P7-00-greedy.py  data/votre_fichier_data.csv `
+      ` python P7-01-bruteforce.py  data/votre_fichier_data.csv`
+      ` python P7-02-optimized.py  data/votre_fichier_data.csv`
 
 Les scripts lisent les données de fichier texte au format csv dans le répertoire "data". Assurez-vous avoir les droits de créer le répertoire "data" et les fichiers ".csv".  
+
+
+## En synthèse cas d'utilisation, limites et contraintes
+
+L’algorithme de force brute est le plus précis car il évalue toutes les possibilités pertinentes mais ne peut être utilisé que sur de petit ensemble de données (de l’ordre des dizaines) pour des raisons de longs temps de traitement.
+
+L’algorithme Glouton apporte une solution mais celle-ci ne sera pas optimale car locale et donc parfois peu précise. Le volume de donnée n’est pas une contrainte.
+
+L’algorithme optimisé (programmation dynamique) est précis, plus rapide que celui de force brute. Le temps de traitement et l’espace mémoire utilisés dépendent du jeu de donnée et de la taille de la contrainte. (de l’ordre de moins du million pour n x budget). Le problème doit pouvoir s’exprimer en fonction de sous-problème.
+
